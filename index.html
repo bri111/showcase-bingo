@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>CS Teacher Bingo</h1>
 
 <div>
-  <img src="icon.svg" alt="Icon" width="100" height="100">
-
+  <object type="image/svg+xml" data="logo.svg" height="150"></object>
 </div>
 
 <button id="rules-btn">Show Rules</button>
@@ -22,10 +20,11 @@
 <button id="reset">Reset Card</button>
 
 <div id="rules-popup" class="popup">
-  <h2>Bingo Rules</h2>
-  <p>Choose a question from the bingo card and discuss with another person.
-    Then click on the corresponding square when you have completed the discussion.</p>
-  <p>Get five in a row, column, or diagonal to win!</p>
+  <h2>Bingo Info</h2>
+  <p>Visit 9 different presentation stations and a presenter or mentor will sign off. </p>
+  <p>Technology Outreach Hawaii (TORCH) is a 501(c)3 non-profit with a mission to promote technology education,
+    make resources accessible, and empower youth. TORCH offers  free technology education classes through programs
+    such as ICSpark and workshops throughout the year. Visit our website at hitorch.org to learn more.</p>
   <button id="close-rules">Close</button>
 </div>
 
@@ -34,6 +33,23 @@
   <p>This will clear the current Bingo board.</p>
   <button id="confirm-reset">Yes, Reset</button>
   <button id="cancel-reset">Cancel</button>
+</div>
+
+<div id="name-popup" class="popup">
+  <h2>Enter a Name</h2>
+  <input type="text" id="name-input" placeholder="Type a name">
+  <div style="margin-top: 10px;">
+    <button id="save-name">Save</button>
+    <button id="cancel-name">Cancel</button>
+  </div>
+</div>
+
+
+<div id="win-popup" class="popup">
+  <h2>🎉 BINGO!</h2>
+  <p>You win! Show your card to a mentor to get a Raffle!</p>
+  <button id="reset-win">Yes, Reset</button>
+  <button id="close-win">Close</button>
 </div>
 
 <script src="script.js"></script>

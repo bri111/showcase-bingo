@@ -84,6 +84,13 @@ button:hover {
   transform: scale(1.05);
 }
 
+#name-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 90%;
+}
+
+
 /* Responsive Design */
 @media (max-width: 500px) {
   #bingo-board {
